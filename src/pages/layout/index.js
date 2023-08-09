@@ -9,29 +9,42 @@ import class_logo from './img/title_classes.png';
 import race_logo from './img/title_races.png';
 import item_logo from './img/title_items.png';
 import structure_logo from './img/title_structures.png';
+import Footer from "../../components/footer";
 
 
-const Main = styled.div`
+const Page = styled.div`
     color: #1c1c1c;
     display : flex;
     align-items: stretch;
     min-height: 100svh;
+    max-height: 100svh;
     flex-direction: column;
     background-image: url(${props => props.dark_mode ? dark_bg : bg});
+`
+
+const Main = styled.div`
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
 `
 
 export default function Layout() {
 
     return (
-        <Main dark_mode={false}>
+        <Page dark_mode={false}>
             <Nav>
                 <NavItem icon={class_logo} title="Classes" route='/classes'/>
                 <NavItem icon={race_logo} title="Races" route='/races'/>
                 <NavItem icon={item_logo} title="Items" route='/items'/>
                 <NavItem icon={structure_logo} title="Structures" route='/structures'/>
             </Nav>
-            <Outlet />
-        </Main>
+            <Main>
+                <Outlet/>
+            </Main>
+            <Footer>
+                <button></button>
+            </Footer>
+        </Page>
     )
 
 }

@@ -1,4 +1,4 @@
-import React, { Children, cloneElement } from 'react';
+import React, { Children } from 'react';
 import './nav.scss';
 import nav_icon_logo from './img/nav-bar-icon.png'
 import nav_title_logo from './img/title_fantastical_lands.png'
