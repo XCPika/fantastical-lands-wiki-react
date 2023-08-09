@@ -1,0 +1,28 @@
+/* HEADER/NAV */
+header { position: sticky ; }
+
+nav {
+    background-image: url('./img/nav-bar.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0.3% 0.3% 0 0.3%;
+}
+
+nav img { cursor: pointer; }
+
+.nav-left, .nav-right , .nav-center { float:left; width:40%; }
+.nav-right > *{ float:right; }
+
+.nav-center {
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-title {
+    position: absolute;
+    transform: translateY(70%);
+}
+
