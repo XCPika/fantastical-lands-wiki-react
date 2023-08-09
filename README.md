@@ -1,6 +1,13 @@
 # Fantastical Lands Wiki React
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 This is a react framework implementation of the Fantastical Lands Wiki
+
+## Create React App README
+From this point on is the default Create React App README.md (Its well written and might be helpful to people cloning this project)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
