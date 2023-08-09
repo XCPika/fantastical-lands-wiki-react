@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Fantastical Lands Wiki React
+
+This is a react framework implementation of the Fantastical Lands Wiki
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
