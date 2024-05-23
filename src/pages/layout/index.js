@@ -31,7 +31,7 @@ const Main = styled.div`
 export default function Layout() {
 
     return (
-        <Page dark_mode={false}>
+        <Page dark_mode={true}>
             <Nav>
                 <NavItem icon={class_logo} title="Classes" route='/classes'/>
                 <NavItem icon={race_logo} title="Races" route='/races'/>
