@@ -1,8 +1,8 @@
 import React, { Children } from 'react';
 import './nav.scss';
-import nav_icon_logo from './img/nav-bar-icon.png'
-import nav_title_logo from './img/title_fantastical_lands.png'
-import StoneBorder from '../stone_border';
+import nav_icon_logo from '../../app/img/nav/nav-bar-icon.webp'
+import nav_title_logo from '../../app/img/nav/title_fantastical_lands.webp'
+import StoneBorderSeperator from '../stone_border';
 import { Link } from 'react-router-dom';
 
 export default function Nav(props) {
@@ -12,27 +12,25 @@ export default function Nav(props) {
     
     return (
         <header>
-            <nav>
+            <nav className="site-nav">
                 <div className="nav-left">
                     {leftChildren}
                 </div>
                 <Link to='/' className='nav-center'>
                     <img 
                         src={nav_icon_logo} alt="Fantastical Lands Server Icon"
-                        width="65vw"
+                        className="nav-icon-logo"
                         role="button"  tabIndex="2"
-                    ></img>
-                    <img 
-                        src={nav_title_logo} alt="Fantastical Lands Title Logo" 
-                        id="nav-title" height="75%" 
-                        role="button" 
                     ></img>
                 </Link>
                 <div className="nav-right">
                     {rightChildren}
                 </div>
             </nav>
-            <StoneBorder/>
+            <StoneBorderSeperator/>
+            <Link to='/' className="nav-title-link" aria-label="Fantastical Lands home">
+                <img src={nav_title_logo} alt="Fantastical Lands" id="nav-title" />
+            </Link>
         </header> 
     )
 

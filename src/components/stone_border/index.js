@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import border from './stone_border.png'
 
-const StoneBorder = styled.div`
+const StoneBorderSeperator = styled.div`
     background-image: url(${border});
     background-repeat: repeat-x;
     height:0.6vw;
@@ -12,4 +12,15 @@ const StoneBorder = styled.div`
     border-top: solid 1px rgb(0, 0, 0);
 `
 
-export default StoneBorder
+
+const StoneBorderSection = ({id, className}) => {
+    return (
+        <section
+                id="item-view"
+                className="stone-border"
+                style={{ "background-image": `url(${process.env.PUBLIC_URL}/img/origin-banner-small.png)` }}
+            ></section>
+    )
+}
+
+export default StoneBorderSeperator

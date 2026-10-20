@@ -1,0 +1,17 @@
+.structures-page {
+    grid-column: 1 / -1;
+    display: flex;
+    min-width: 0;
+    min-height: 65svh;
+    align-items: center;
+    justify-content: center;
+}
+
+.structures-page img {
+    display: block;
+    width: min(70vw, 640px);
+    max-width: 100%;
+    max-height: 55svh;
+    object-fit: contain;
+    transform: translateY(-4svh);
+}

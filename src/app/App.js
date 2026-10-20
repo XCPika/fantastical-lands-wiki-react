@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from '../pages/home';
 import Layout from '../pages/layout';
 import ClassPage from "../pages/classes";
@@ -7,18 +7,35 @@ import StructurePage from "../pages/structures";
 import ItemPage from "../pages/items";
 
 function App() {
+
+  const router = createBrowserRouter(
+    [
+      {
+        path: '/',
+        element: <Layout />,
+        children: [
+          { index: true, element: <HomePage /> },
+          { path: "classes", element: <ClassPage /> },
+          { path: "races", element: <RacePage /> },
+          { path: "structures", element: <StructurePage /> },
+          { path: "items", element: <ItemPage /> },
+        ]
+      }
+    ],
+    {
+      future: {
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }
+    }
+  );
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<HomePage/>}/>
-          <Route path='/classes' element={<ClassPage/>}/>
-          <Route path='/races' element={<RacePage/>}/>
-          <Route path='/structures' element={<StructurePage/>}/>
-          <Route path='/items' element={<ItemPage/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <div className="main">
+        <RouterProvider router={router} />
+      </div>
+    </>
   );
 }
 

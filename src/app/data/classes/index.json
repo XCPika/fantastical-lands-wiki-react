@@ -1,0 +1,118 @@
+{
+    "commoner": {
+        "name": "Commoner",
+        "description": "Regular old minecraft character, no abilities, no debuffs",
+        "impact": 0,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    },
+    "alchemist": {
+        "name": "Alchemist",
+        "description": "A master of potion making, Alchemists excel in the art of the brew.",
+        "impact": 1,
+        "key": "None",
+        "powers": [
+            {
+                "name": "Enraging Elixir",
+                "description": "Create a potion cloud that grants strength to those in the area. Must be sneaking to activate.",
+                "active": true,
+                "cooldown": 15
+            },
+            {
+                "name": "Essence Refining",
+                "description": "Low chance to gain random potions as drops when killing mobs.",
+                "active": false,
+                "cooldown": 0
+            },
+            {
+                "name": "Healing Tincture",
+                "description": "Small heal buff from potions.",
+                "active": false,
+                "cooldown": 0
+            },
+            {
+                "name": "Healing Spring",
+                "description": "Create a potion cloud that grants regeneration to those in the area.",
+                "active": true,
+                "cooldown": 15
+            }
+        ]
+    },
+    "fighter": {
+        "name": "Fighter",
+        "description": "Unmatched warriors with the ability to conquer any foe. Their knowledge of fighting forms helps them adapt to any enemy.",
+        "impact": 1,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    },
+    "magus": {
+        "name": "Magus",
+        "description": "A maker of mystical marvels.",
+        "impact": 2,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    },
+    "explorer": {
+        "name": "Explorer",
+        "description": "Masters of terrain, Explorers widen the world with every new sight they see.",
+        "impact": 2,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    },
+    "rogue": {
+        "name": "Rogue",
+        "description": "Masters of shadow the rogue is trained in the deadly arts.",
+        "impact": 2,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    },
+    "builder": {
+        "name": "Builder",
+        "description": "Talented and efficient, Builders get the job done no matter the cost.",
+        "impact": 2,
+        "key": "None",
+        "powers": [
+            {
+                "name": "None",
+                "description": "",
+                "active": false,
+                "cooldown": 0
+            }
+        ]
+    }
+}

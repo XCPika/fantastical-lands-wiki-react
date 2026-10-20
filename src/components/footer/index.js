@@ -1,9 +1,9 @@
 import React from "react";
 import { styled } from "styled-components";
-import StoneBorder from "../stone_border";
-import nav_bg from '../nav/img/nav-bar.png'
+import StoneBorderSeperator from "../stone_border";
+import nav_bg from '../../app/img/nav/nav-bar.webp'
 
-const FooterDiv = styled.div`
+const FooterDiv = styled.footer`
     justify-content: flex-end;
     background-image: url(${nav_bg});
     max-height: min-content;
@@ -17,7 +17,7 @@ export default function Footer(props) {
     return (
             
         <FooterDiv>
-            <StoneBorder/>
+            <StoneBorderSeperator/>
             {props.children}
         </FooterDiv>
     )

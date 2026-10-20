@@ -1,0 +1,90 @@
+main {
+    grid-template-rows: auto;
+}
+
+#item-view {
+    grid-area: 1 / 1;
+    grid-row-end: 4;
+    overflow: auto;
+    padding: 2%;
+    scrollbar-width: none;
+    margin-right: 2svw;
+    min-width:55px;
+    max-width:70px;
+}
+
+#item-crafting-view {
+    display:grid;
+    grid-template-columns: repeat(3, minmax(50px, 0.312fr));
+    grid-template-rows: repeat(3, minmax(50px, 0.312fr));
+    grid-area: 2 / 3;
+    grid-row-end: 2;
+    gap: 5.6%;
+    aspect-ratio: 1;
+    min-height: 200px;
+    margin: auto 4svw;
+    margin-right: 0;
+    padding: 3%;
+    background-color: #c6c6c6;
+}   
+
+body.dark-mode #item-crafting-view { background-color: #343434; }
+
+.item {
+    border: min(10px, 30px) solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-image: var(--crafting-border) 2 round;
+    /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19), 0px 0px 5px 1px rgba(0, 0, 0, 1) inset; */
+    aspect-ratio: 1;
+    object-fit: contain;
+    height: calc(100% - min(10px, 30px));
+}
+
+body.dark-mode .item {
+    border-image: var(--crafting-border-dark) 2 round;
+}
+
+#item-details {
+    position: relative;
+    grid-area: 1 / 2;
+    grid-row-end: 4;
+    padding: 1% 2%;
+    background-color: rgb(209, 209, 209);
+    text-wrap: stable;
+    min-width:min-content;
+}
+
+body.dark-mode #item-details { background-color: rgb(52, 52, 52); }
+
+
+.item-banner-icon {
+    position: absolute;
+    top:13%;
+    left:13%;
+    grid-area: 1 / 1;
+    aspect-ratio: 1;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+}
+
+.item-banner {
+    position: relative;
+    cursor: pointer;
+    display:grid;
+    aspect-ratio: 1;
+    grid-template-columns: 17% 41.5% 41.5%;
+    background-image: var(--origin-banner-small);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: 80px;
+    min-height:30px;
+    width: 100%;
+    margin: auto auto;
+    -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+}

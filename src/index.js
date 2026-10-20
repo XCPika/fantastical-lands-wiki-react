@@ -1,14 +1,12 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './app/App';
-import reportWebVitals from './reportWebVitals';
+import { DarkModeProvider } from './middleware/context/dark-mode';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <DarkModeProvider>
     <App />
-  </React.StrictMode>
+  </DarkModeProvider>
 );
 
-reportWebVitals();

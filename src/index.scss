@@ -1,5 +1,24 @@
-html { font-family: ChillPixelsMaximal;}
-@font-face { font-family: 'ChillPixelsMaximal'; src: url('/app/font/ChillPixels-Maximal.woff2') format('woff2'); }
+:root {
+  --bg: url("/app/img/page/background.webp");
+  --bg-dark: url("/app/img/page/background-dark.webp");
+  --nav-bg: url('/app/img/nav/nav-bar.webp');
+
+  --stone-border: url("/app/img/page/stone_border.webp");
+  --crafting-border: url("/app/img/icons/items/item-border.webp");
+  --crafting-border-dark: url("/app/img/icons/items/item-border-dark.webp");
+  --planks: url("/app/img/page/planks.png");
+  --parchment: url("/app/img/page/parchment.png");
+}
+
+
+html {
+  font-family: ChillPixelsMaximal;
+}
+
+@font-face {
+  font-family: 'ChillPixelsMaximal';
+  src: url('/app/font/ChillPixels-Maximal.woff2') format('woff2');
+}
 
 body {
   margin: 0;
@@ -12,3 +31,112 @@ code {
     monospace;
 }
 
+.page {
+  // min-height: 100svh;
+  max-height: 100svh;
+  color: #1c1c1c;
+  background-image: var(--bg);
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: #242424 #343434;
+}
+
+.page.dark-mode {
+  background-image: var(--bg-dark);
+  color: rgb(225, 225, 225);
+}
+
+section.stone-border {
+  background-color: rgb(209, 209, 209);
+}
+
+.page.dark-mode section.stone-border {
+  background-color: #343434;
+}
+
+
+#main-content {
+  padding: 2%;
+  text-align: center;
+}
+
+/* MAIN */
+main {
+  position: static;
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+  // grid-template-rows: 0.15fr 0.7fr 0.15fr;
+  column-gap: 3%;
+  margin: 2% 0;
+  padding: 0 5%;
+  min-height: 65svh;
+}
+
+main section p {
+  margin: auto 0;
+}
+
+#main-title-content {
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer {
+  width: calc(100% - 1%);
+  margin: 0.5%;
+  min-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  & img {
+    align-self: center;
+  }
+}
+
+#dark-mode-toggle {
+  float: right;
+}
+
+.stone-border {
+  border: 0.6svw solid rgb(0, 0, 0);
+  border-image: var(--stone-border) 10 round;
+  box-shadow: inset 0 0px 5px 0 rgb(0, 0, 0), 0 0 5px 0 rgba(0, 0, 0, 0.19), 0px 0px 5px 1px rgb(0, 0, 0) inset, 0 0px 5px 0 rgba(0, 0, 0, .5), 0 0 5px 0 rgba(0, 0, 0, 0.08), 0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}
+
+.stone-border .small {
+  border-image: var(--stone-border) 10 round;
+}
+
+#stone_brick_border_nav {
+  background-image: var(--stone-border);
+  background-repeat: repeat-x;
+  height: 0.6svw;
+  min-height: 6px;
+  max-height: 12px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1), 0 0 5px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: solid 1px rgb(0, 0, 0);
+  border-top: solid 1px rgb(0, 0, 0);
+}
+
+.pixelated {
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+}
+
+.parchment {
+  background-image: var(--parchment);
+  background-repeat: repeat;
+}
+
+.planks {
+  background-image: var(--planks);
+  background-repeat: repeat;
+}
