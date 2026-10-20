@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fantastical-lands-wiki-react/static/css/main.faecd6a3.css",
-    "main.js": "/fantastical-lands-wiki-react/static/js/main.c7cac7ab.js",
+    "main.js": "/fantastical-lands-wiki-react/static/js/main.9170f4b0.js",
     "static/media/COMING-SOON.png": "/fantastical-lands-wiki-react/static/media/COMING-SOON.40dbdf685b234692ea57.png",
     "static/media/ChillPixels-Maximal.woff2": "/fantastical-lands-wiki-react/static/media/ChillPixels-Maximal.60da9b462bc85e847d28.woff2",
     "static/media/xp_forge.webp": "/fantastical-lands-wiki-react/static/media/xp_forge.56607ae9f7d7005f1d8d.webp",
@@ -21,8 +21,8 @@
     "static/media/human.webp": "/fantastical-lands-wiki-react/static/media/human.4506e67c9d2dcb399deb.webp",
     "static/media/trollkin.webp": "/fantastical-lands-wiki-react/static/media/trollkin.ccfcaadd34ef12ca8d0a.webp",
     "static/media/birdfolk.webp": "/fantastical-lands-wiki-react/static/media/birdfolk.d7459630fbaeac76590f.webp",
-    "static/media/goblin.webp": "/fantastical-lands-wiki-react/static/media/goblin.1116228212818eb0f4bb.webp",
     "index.html": "/fantastical-lands-wiki-react/index.html",
+    "static/media/goblin.webp": "/fantastical-lands-wiki-react/static/media/goblin.1116228212818eb0f4bb.webp",
     "static/media/origin_orb.webp": "/fantastical-lands-wiki-react/static/media/origin_orb.c809a4ca50f0883e31ee.webp",
     "static/media/background-dark.webp": "/fantastical-lands-wiki-react/static/media/background-dark.6f867dc060445fb4384f.webp",
     "static/media/skill_orb.webp": "/fantastical-lands-wiki-react/static/media/skill_orb.03154cb3b57fdf0654f8.webp",
@@ -37,10 +37,10 @@
     "static/media/item-border-dark.webp": "/fantastical-lands-wiki-react/static/media/item-border-dark.b74a15779b7675cf258c.webp",
     "static/media/blank.webp": "/fantastical-lands-wiki-react/static/media/blank.d04762472c19f3c6ba18.webp",
     "main.faecd6a3.css.map": "/fantastical-lands-wiki-react/static/css/main.faecd6a3.css.map",
-    "main.c7cac7ab.js.map": "/fantastical-lands-wiki-react/static/js/main.c7cac7ab.js.map"
+    "main.9170f4b0.js.map": "/fantastical-lands-wiki-react/static/js/main.9170f4b0.js.map"
   },
   "entrypoints": [
     "static/css/main.faecd6a3.css",
-    "static/js/main.c7cac7ab.js"
+    "static/js/main.9170f4b0.js"
   ]
 }
