@@ -19,10 +19,11 @@ function App() {
           { path: "races", element: <RacePage /> },
           { path: "structures", element: <StructurePage /> },
           { path: "items", element: <ItemPage /> },
-        ]
+        ],
       }
     ],
     {
+      basename: "/fantastical-lands-wiki-react",
       future: {
         v7_startTransition: true,
         v7_relativeSplatPath: true,
